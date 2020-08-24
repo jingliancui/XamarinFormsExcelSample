@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleApp.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             Title="Safe Area"
+             ios:Page.UseSafeArea="true">
+
+    <StackLayout>
+        <Button Text="Create xlsx file" x:Name="CreateXlsxBtn" Clicked="CreateXlsxBtn_Clicked"></Button>
+        <Label x:Name="CreateStatusLabel" Text="Status:"></Label>
+        <Button Text="Open xlsx file" x:Name="OpenXlsxBtn" Clicked="OpenXlsxBtn_Clicked"></Button>
+        <Label Text="First value:" x:Name="FirstValLabel"></Label>
+        <Button Text="Read Xlsx Resource" x:Name="ReadResourceFile" Clicked="ReadResourceFile_Clicked"></Button>
+        <Label Text="Resource First Value:" x:Name="ResourceValLabel"> </Label>
+    </StackLayout>
+
+</ContentPage>
